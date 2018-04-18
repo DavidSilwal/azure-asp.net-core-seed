@@ -1,0 +1,1 @@
+# azure-asp.net-core-seed
