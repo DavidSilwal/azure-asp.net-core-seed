@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "PhotoGallery";
+}
+@section styles
+{
+    <link href="~/dist/libs/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/dist/libs/css/jquery.fancybox.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/dist/libs/css/alertify.core.css" rel="stylesheet" />
+    <link href="~/dist/libs/css/alertify.bootstrap.css" rel="stylesheet" />
+    @*<link href="~/dist/libs/css/alertify.default.css" rel="stylesheet" />*@
+}
+<div id="nav-separator"></div>
+<photogallery-app>
+    <div class="loading">Loading</div>
+</photogallery-app>
+@section scripts
+{
+    <script src="~/dist/libs/js/jquery.fancybox.pack.js"></script>
+    <script src="~/dist/libs/js/alertify.min.js"></script>
+}
+@section customScript
+{
+    $(document).ready(function() {
+        $('.fancybox').fancybox();
+    });
+}

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    <base href="/">
+    <link href="~/dist/libs/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/dist/libs/css/font-awesome.css" rel="stylesheet" />
+    @RenderSection("styles", required: false)
+
+    <script src="~/dist/libs/js/jquery.js"></script>
+    <script src="~/dist/libs/js/bootstrap.js"></script>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        @RenderSection("customScript", required: false)
+    </script>
+    <script type="text/javascript" src="~/dist/main.bundle.js"></script>
+</body>
+</html>
